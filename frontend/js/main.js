@@ -33,4 +33,19 @@ if (loginForm) {
   });
 }
 
+// Déconnexion simulée
+const logoutBtn = document.getElementById('logoutBtn');
+if (logoutBtn) {
+  logoutBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    alert("👋 Vous avez été déconnecté avec succès !");
+    window.location.href = "connexion.html";
+  });
+}
+
+// Simuler un utilisateur connecté
+if (document.getElementById('userName')) {
+  const userName = localStorage.getItem('userName') || "Marie Dupont";
+  document.getElementById('userName').textContent = userName;
+}
 

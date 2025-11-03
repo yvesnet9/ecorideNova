@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tableau de bord – EcoRideNova</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">🌿 EcoRideNova</div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+    <nav class="nav" id="mainNav">
+      <a href="../index.html">Accueil</a>
+      <a href="covoiturages.html">Covoiturages</a>
+      <a href="#" class="active">Mon espace</a>
+      <a href="connexion.html" id="logoutBtn">Déconnexion</a>
+    </nav>
+  </header>
+
+  <!-- DASHBOARD -->
+  <section class="dashboard">
+    <h2>👋 Bienvenue, <span id="userName">Utilisateur</span> !</h2>
+    <p>Voici votre tableau de bord personnel EcoRideNova.</p>
+
+    <div class="dashboard-cards">
+      <div class="card">
+        <h3>🚗 Mes trajets à venir</h3>
+        <ul>
+          <li>Paris → Lyon – 12/11/2025 – 08h00</li>
+          <li>Toulouse → Bordeaux – 15/11/2025 – 09h30</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>⭐ Mes avis récents</h3>
+        <p>“Trajet agréable avec Marc.” – 5⭐</p>
+        <p>“Conduite fluide, je recommande.” – 4⭐</p>
+      </div>
+
+      <div class="card">
+        <h3>💬 Notifications</h3>
+        <p>Aucune nouvelle notification.</p>
+      </div>
+    </div>
+
+    <div class="actions">
+      <a href="covoiturages.html" class="btn btn-primary">Rechercher un covoiturage</a>
+      <a href="details.html" class="btn btn-secondary">Voir un trajet</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 EcoRideNova – contact@ecoride.fr</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
+
