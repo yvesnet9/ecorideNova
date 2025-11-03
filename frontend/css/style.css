@@ -474,3 +474,77 @@ body {
   }
 }
 
+/* =============================
+   🚗 US7 – LISTE DES TRAJETS
+   ============================= */
+
+.rides-list {
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.rides-list h2 {
+  text-align: center;
+  color: var(--green);
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 2rem;
+}
+
+.rides-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.ride-card {
+  background: #fafafa;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ride-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+}
+
+.ride-card h3 {
+  color: var(--green);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.ride-card p {
+  color: #555;
+  margin: 0.3rem 0;
+}
+
+.ride-card .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: var(--green);
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.ride-card .btn:hover {
+  background: #256e46;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .rides-list {
+    padding: 1rem;
+    margin: 1rem;
+  }
+}
+

@@ -75,3 +75,61 @@ Le ${date} à ${time}, ${price}€ (${seats} places)`);
   });
 }
 
+// =============================
+// 🚗 US7 - LISTE DES TRAJETS
+// =============================
+
+const ridesContainer = document.getElementById("ridesContainer");
+
+if (ridesContainer) {
+  // Simulation de trajets (données locales)
+  const rides = [
+    {
+      id: 1,
+      from: "Paris",
+      to: "Lyon",
+      date: "12/11/2025",
+      time: "08:00",
+      price: 25,
+      driver: "Marie Dupont",
+      seats: 2,
+    },
+    {
+      id: 2,
+      from: "Toulouse",
+      to: "Bordeaux",
+      date: "15/11/2025",
+      time: "09:30",
+      price: 18,
+      driver: "Marc Bernard",
+      seats: 3,
+    },
+    {
+      id: 3,
+      from: "Nice",
+      to: "Marseille",
+      date: "18/11/2025",
+      time: "07:15",
+      price: 22,
+      driver: "Sophie Leroy",
+      seats: 1,
+    },
+  ];
+
+  // Injection dynamique des cartes de trajets
+  ridesContainer.innerHTML = rides
+    .map(
+      (ride) => `
+      <div class="ride-card">
+        <h3>${ride.from} → ${ride.to}</h3>
+        <p><strong>Date :</strong> ${ride.date} – ${ride.time}</p>
+        <p><strong>Prix :</strong> ${ride.price} €</p>
+        <p><strong>Conducteur :</strong> ${ride.driver}</p>
+        <p><strong>Places restantes :</strong> ${ride.seats}</p>
+        <a href="details.html" class="btn">Voir le trajet</a>
+      </div>
+    `
+    )
+    .join("");
+}
+
