@@ -49,3 +49,29 @@ if (document.getElementById('userName')) {
   document.getElementById('userName').textContent = userName;
 }
 
+// Création de trajet (validation simple)
+const createRideForm = document.getElementById('createRideForm');
+if (createRideForm) {
+  createRideForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const departure = document.getElementById('departure').value;
+    const arrival = document.getElementById('arrival').value;
+    const date = document.getElementById('date').value;
+    const time = document.getElementById('time').value;
+    const price = document.getElementById('price').value;
+    const seats = document.getElementById('seats').value;
+
+    if (!departure || !arrival || !date || !time || !price || !seats) {
+      alert("⚠️ Merci de remplir tous les champs obligatoires !");
+      return;
+    }
+
+    alert(`✅ Trajet créé avec succès !
+${departure} → ${arrival}
+Le ${date} à ${time}, ${price}€ (${seats} places)`);
+
+    createRideForm.reset();
+  });
+}
+
