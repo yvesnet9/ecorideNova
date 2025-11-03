@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription – EcoRideNova</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">🌿 EcoRideNova</div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+    <nav class="nav" id="mainNav">
+      <a href="../index.html">Accueil</a>
+      <a href="covoiturages.html">Covoiturages</a>
+      <a href="connexion.html">Connexion</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- FORMULAIRE D'INSCRIPTION -->
+  <section class="auth-section">
+    <h2>📝 Créer un compte</h2>
+    <form class="auth-form" id="registerForm">
+      <label for="name">Nom complet :</label>
+      <input type="text" id="name" placeholder="Votre nom complet" required>
+
+      <label for="email">Adresse email :</label>
+      <input type="email" id="email" placeholder="exemple@mail.com" required>
+
+      <label for="password">Mot de passe :</label>
+      <input type="password" id="password" placeholder="********" required>
+
+      <label for="confirmPassword">Confirmer le mot de passe :</label>
+      <input type="password" id="confirmPassword" placeholder="********" required>
+
+      <button type="submit" class="btn btn-primary">S'inscrire</button>
+      <p>Déjà membre ? <a href="connexion.html">Se connecter</a></p>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 EcoRideNova – contact@ecoride.fr</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
+
