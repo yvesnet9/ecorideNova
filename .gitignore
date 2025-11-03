@@ -1,0 +1,19 @@
+# Système
+.DS_Store
+Thumbs.db
+
+# IDE / éditeurs
+.vscode/
+.idea/
+
+# Dépendances
+node_modules/
+vendor/
+
+# Environnements
+.env
+
+# Build / cache
+dist/
+build/
+__pycache__/
