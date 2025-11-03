@@ -4,14 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Connexion – EcoRideNova</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
+  <!-- HEADER -->
   <header class="header">
     <div class="logo">🌿 EcoRideNova</div>
-    <nav class="nav">
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+    <nav class="nav" id="mainNav">
       <a href="../index.html">Accueil</a>
       <a href="covoiturages.html">Covoiturages</a>
       <a href="connexion.html" class="active">Connexion</a>
@@ -19,24 +20,27 @@
     </nav>
   </header>
 
+  <!-- FORMULAIRE DE CONNEXION -->
   <section class="auth-section">
     <h2>🔑 Connexion</h2>
-    <form class="auth-form">
-      <label>Email :</label>
-      <input type="email" placeholder="exemple@mail.com" required>
-      
-      <label>Mot de passe :</label>
-      <input type="password" placeholder="********" required>
+    <form class="auth-form" id="loginForm">
+      <label for="email">Adresse email :</label>
+      <input type="email" id="email" placeholder="exemple@mail.com" required>
+
+      <label for="password">Mot de passe :</label>
+      <input type="password" id="password" placeholder="********" required>
 
       <button type="submit" class="btn btn-primary">Se connecter</button>
-      <p>Pas encore inscrit ? <a href="inscription.html">Créer un compte</a></p>
+      <p>Pas encore de compte ? <a href="inscription.html">Créer un compte</a></p>
     </form>
   </section>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <p>© 2025 EcoRideNova – contact@ecoride.fr</p>
   </footer>
 
+  <script src="../js/main.js"></script>
 </body>
 </html>
 
